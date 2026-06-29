@@ -1,0 +1,185 @@
+.tracker5 {
+  display: flex;
+  width: 100%;
+  height: 900px;
+  background-color: white;
+}
+
+.header {
+  display: block;
+  width: 250px;
+  height: 900px;
+  border: 1px solid #0000001A;
+}
+
+.header-list {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  padding: 25px;
+  gap: 10px;
+  border: 1px solid #0000001A;
+}
+
+.header-list img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-list p {
+  font-size: 12px;
+  color: #717182;
+}
+
+.header nav {
+  width: 100%;
+  height: 810px;
+  padding-top: 30px;
+  margin-left: -30px;
+}
+
+.header-ul {
+  width: 225px;
+  height: 255px;
+}
+
+.header-ul li {
+  display: flex;
+  width: 200px;
+  height: 47px;
+  padding: 12px;
+  gap: 10px;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.header-ul li:hover {
+  background-color: black;
+}
+
+.header-ul img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-ul p {
+  font-size: 19px;
+  color: #717182;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.header-ul p:hover {
+  color: white;
+}
+
+.tracker5-div {
+  width: 1048px;
+  height: 900px;
+  padding: 24px;
+}
+
+.tracker5-div1 {
+  display: flex;
+  width: 1000px;
+  height: 62px;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.tracker5-div1 h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.tracker5-div1 p {
+  font-size: 16px;
+  color: #717182;
+}
+
+.tracker5-div1 h3 {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  color: #717182;
+  margin-top: 20px;
+}
+
+.tracker5-div1 img {
+  width: 20px;
+  height: 20px;
+}
+
+.tracker5-div2 {
+  width: 1000px;
+  height: 400px;
+  padding: 24px;
+  font-size: 16px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  border: 1px solid #0000001A;
+}
+
+.tracker5-div2 img {
+  width: 952px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.tracker5-div3 {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.tracker5-div4 {
+  width: 490px;
+  height: 350px;
+  padding: 24px;
+  font-size: 17px;
+  border-radius: 15px;
+  border: 1px solid #0000001A;
+}
+
+.tracker5-div4 img {
+  width: 440px;
+  height: 250px;
+  margin-top: 15px;
+}
+
+.tracker5-div5 {
+  display: flex;
+  width: 1000px;
+  height: 130px;
+  justify-content: space-between;
+}
+
+.tracker5-div5 p {
+  font-size: 14px;
+  color: #717182;
+  margin-bottom: 10px;
+}
+
+.tracker5-div5 h2 {
+  margin-bottom: 10px;
+}
+
+.tracker5-div6 {
+  width: 235px;
+  height: 130px;
+  padding: 24px;
+  border-radius: 15px;
+  border: 2px solid #0000001A;
+}
+
+.tracker5-div6 div {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.tracker5-div6 img {
+  width: 16px;
+  height: 16px;
+}
