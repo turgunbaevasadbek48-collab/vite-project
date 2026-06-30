@@ -14,6 +14,12 @@ import get13 from "../../assets/get13.png";
 import get14 from "../../assets/get14.png";
 import get15 from "../../assets/get15.png";
 import get18 from "../../assets/get18.png";
+import Container1 from "../../assets/Container1.png";
+import Container2 from "../../assets/Container2.png";
+import Container3 from "../../assets/Container3.png";
+import Container4 from "../../assets/Container4.png";
+import Container5 from "../../assets/Container5.png";
+import Container9 from "../../assets/Container9.png";
 import "./Tracker4.css";
 
 const Tracker4 = () => {
@@ -124,21 +130,21 @@ const Tracker4 = () => {
             <div className="tracker4-div3" key={item.id || index}>
               <div>
                 <img className="tracker4-div3-1" 
-                  src={new URL(`../../assets${item.image}`, import.meta.url).href} alt="" />
+                  src={Container5} alt="" />
                 <h2>{item.static}</h2>
               </div>
               <h3>{item.name}</h3>
               <p>{item.price}</p>
               <h3>{item.money}</h3>
               <img className="tracker4-div3-2" 
-                src={new URL(`../../assets${item.images}`, import.meta.url).href} alt="" />
+                src={Container9} alt="" />
             </div>
           ))}
         </div>
         <div className="tracker4-div4">
           <h2>Umumiy xarajatlar</h2>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container1.png" alt="" />
+            <img className="tracker4-div5-1" src={Container1} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Ovqat</p>
@@ -149,7 +155,7 @@ const Tracker4 = () => {
             <p>25.2%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container2.png" alt="" />
+            <img className="tracker4-div5-1" src={Container2} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Transport</p>
@@ -160,7 +166,7 @@ const Tracker4 = () => {
             <p>12.5%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container3.png" alt="" />
+            <img className="tracker4-div5-1" src={Container3} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>To'lovlar</p>
@@ -171,7 +177,7 @@ const Tracker4 = () => {
             <p>19.3%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container4.png" alt="" />
+            <img className="tracker4-div5-1" src={Container4} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>O'yin-kulgi</p>
@@ -182,7 +188,7 @@ const Tracker4 = () => {
             <p>9.5%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container5.png" alt="" />
+            <img className="tracker4-div5-1" src={Container5} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Kafe</p>
@@ -193,7 +199,7 @@ const Tracker4 = () => {
             <p>8.3%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src="/imagea/Container6.png" alt="" />
+            <img className="tracker4-div5-1" src={Container3} alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Salomatlik</p>

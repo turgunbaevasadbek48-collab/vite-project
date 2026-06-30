@@ -159,14 +159,14 @@ const Tracker2 = () => {
                 <p>Transport</p>
                 <p>420,000 so'm</p>
               </div>
-              <img src={get13} alt="" />
+              <img src={get14} alt="" />
             </div>
             <div className="tracker2-div10">
               <div className="tracker2-div9">
                 <p>To'lovlar</p>
                 <p>650,000 so'm</p>
               </div>
-              <img src={get14} alt="" />
+              <img src={get9} alt="" />
             </div>
             <div className="tracker2-div10">
               <div className="tracker2-div9">

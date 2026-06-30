@@ -55,73 +55,57 @@
       "id": "1",
       "name": "Ovqat",
       "static": "25.2%",
-      "image": "/image/Container1.png",
       "price": "24 tranzaksiya",
-      "money": "850,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "850,000 so'm"
     },
     {
       "id": "2",
       "name": "Transport",
       "static": "12.5%",
-      "image": "/image/Container2.png",
       "price": "15 tranzaksiya",
-      "money": "420,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "420,000 so'm"
     },
     {
       "id": "3",
       "name": "To'lovlar",
       "static": "19.3%",
-      "image": "/image/Container3.png",
       "price": "8 tranzaksiya",
-      "money": "650,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "650,000 so'm"
     },
     {
       "id": "4",
       "name": "O'yin-kulgi",
       "static": "9.5%",
-      "image": "/image/Container4.png",
       "price": "12 tranzaksiya",
-      "money": "320,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "320,000 so'm"
     },
     {
       "id": "5",
       "name": "Kafe",
       "static": "8.3%",
-      "image": "/image/Container5.png",
       "price": "18 tranzaksiya",
-      "money": "280,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "280,000 so'm"
     },
     {
       "id": "6",
       "name": "Salomatlik",
       "static": "13.4%",
-      "image": "/image/Container6.png",
       "price": "6 tranzaksiya",
-      "money": "450,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "450,000 so'm"
     },
     {
       "id": "7",
       "name": "Ish",
       "static": "5.3%",
-      "image": "/image/Container7.png",
       "price": "9 tranzaksiya",
-      "money": "180,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "180,000 so'm"
     },
     {
       "id": "8",
       "name": "Sovg'alar",
       "static": "25.2%",
-      "image": "/image/Container8.png",
       "price": "7 tranzaksiya",
-      "money": "220,000 so'm",
-      "images": "/images/Container9.png"
+      "money": "220,000 so'm"
     }
   ]
 }
