@@ -30,31 +30,31 @@ const Tracker2 = () => {
         </div>
         <nav>
           <ul className="header-ul">
-            <Link to={`/user1/:id`}>
+            <Link to={`/user1/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get2} alt="" />
                 <p>Dashboard</p>
               </li>
             </Link>
-            <Link to={`/user2/:id`}>
+            <Link to={`/user2/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get3} alt="" />
                 <p>Transactions</p>
               </li>
             </Link>
-            <Link to={`/user3/:id`}>
+            <Link to={`/user3/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get4} alt="" />
                 <p>Kategoriyalar</p>
               </li>
             </Link>
-            <Link to={`/user4/:id`}>
+            <Link to={`/user4/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get5} alt="" />
                 <p>Statistika</p>
               </li>
             </Link>
-            <Link to={`/user5/:id`}>
+            <Link to={`/user5/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get6} alt="" />
                 <p>Profil</p>

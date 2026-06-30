@@ -60,31 +60,31 @@ const Tracker4 = () => {
         </div>
         <nav>
           <ul className="header-ul">
-            <Link to={`/user1/:id`}>
+            <Link to={`/user1/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get2} alt="" />
                 <p>Dashboard</p>
               </li>
             </Link>
-            <Link to={`/user2/:id`}>
+            <Link to={`/user2/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get3} alt="" />
                 <p>Transactions</p>
               </li>
             </Link>
-            <Link to={`/user3/:id`}>
+            <Link to={`/user3/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get4} alt="" />
                 <p>Kategoriyalar</p>
               </li>
             </Link>
-            <Link to={`/user4/:id`}>
+            <Link to={`/user4/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get5} alt="" />
                 <p>Statistika</p>
               </li>
             </Link>
-            <Link to={`/user5/:id`}>
+            <Link to={`/user5/:id`} style={{ textDecoration: 'none' }}>
               <li>
                 <img src={get6} alt="" />
                 <p>Profil</p>
@@ -127,13 +127,15 @@ const Tracker4 = () => {
           {categoriesList && categoriesList.map((item, index) => (
             <div className="tracker4-div3" key={item.id || index}>
               <div>
-                <img className="tracker4-div3-1" src={item.image} alt="" />
+                <img className="tracker4-div3-1" 
+                  src={new URL(`../../assets${item.image}`, import.meta.url).href} alt="" />
                 <h2>{item.static}</h2>
               </div>
               <h3>{item.name}</h3>
               <p>{item.price}</p>
               <h3>{item.money}</h3>
-              <img className="tracker4-div3-2" src={item.images} alt="" />
+              <img className="tracker4-div3-2" 
+                src={new URL(`../../assets${item.images}`, import.meta.url).href} alt="" />
             </div>
           ))}
         </div>

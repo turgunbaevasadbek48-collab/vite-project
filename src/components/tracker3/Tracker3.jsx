@@ -15,6 +15,7 @@ import get11 from "../../assets/get11.png";
 import get16 from "../../assets/get16.png";
 import get17 from "../../assets/get17.png";
 import get18 from "../../assets/get18.png";
+import get31 from "../../assets/get31.png"; // Yangi rasm import qilindi
 import "./Tracker3.css";
 
 const Tracker3 = () => {
@@ -28,11 +29,14 @@ const Tracker3 = () => {
   const [date, setDate] = useState("");
   const [type, setType] = useState("Xarajat"); 
 
+  // Filtrlash uchun yangi holat ("all", "daromad", "xarajat")
+  const [filterType, setFilterType] = useState("all");
+
   const dispatch = useDispatch();
-    const editsTask = useSelector((state) => state.todo?.editTask || state["vite-project"]?.editTask);
+  const editsTask = useSelector((state) => state.todo?.editTask || state["vite-project"]?.editTask);
 
   useEffect(() => {
-    fetch("https://mocki.io/v1/afdbefff-11a0-463e-984c-dd0a3eef99e6")
+    fetch("https://mocki.io/v1/4449aa5a-ce80-4fdb-8803-dd704f4e2da8")
       .then((res) => res.json())
       .then((data) => setProducts(data.products || []))
       .catch((err) => console.error("Xatolik yuz berdi:", err));
@@ -40,14 +44,28 @@ const Tracker3 = () => {
 
   const filter = search.trim().toLowerCase();
 
+  // Qidiruv va Filtr tugmalariga moslab mahsulotlarni saralash
   const filteredProducts = products.filter(product => {
-    if (!filter) return true;
-    const pName = (product.name || '').toLowerCase();
-    const title = (product.title || '').toLowerCase();
-    const brand = (product.brand || '').toLowerCase();
-    const cat = (product.category || '').toLowerCase();
-    
-    return pName.includes(filter) || title.includes(filter) || brand.includes(filter) || cat.includes(filter);
+    // 1. Qidiruv bo'yicha filter
+    if (filter) {
+      const pName = (product.name || '').toLowerCase();
+      const title = (product.title || '').toLowerCase();
+      const brand = (product.brand || '').toLowerCase();
+      const cat = (product.category || '').toLowerCase();
+      const matchesSearch = pName.includes(filter) || title.includes(filter) || brand.includes(filter) || cat.includes(filter);
+      if (!matchesSearch) return false;
+    }
+
+    // 2. Tugmalar bo'yicha filter ("Daromad", "_Xarajat", "Barchasi")
+    const priceText = (product.price || '').toLowerCase();
+    if (filterType === "daromad") {
+      return priceText.includes("daromad");
+    } else if (filterType === "xarajat") {
+      // get31 rasmga ega bo'lgan (ya'ni daromad) elementlardan tashqari hammasini ko'rsatish
+      return product.img !== "get31";
+    }
+
+    return true; // "all" bo'lsa hammasini qaytaradi
   });
 
   const handleDeleteClick = (id, index) => {
@@ -72,34 +90,38 @@ const Tracker3 = () => {
   }, [editsTask]);
 
   const handleSubmit = (e) => {
-  e.preventDefault();
-  
-  if (!name.trim()) return;
+    e.preventDefault();
+    if (!name.trim()) return;
 
-  const newTransaction = {
-    id: Date.now(),
-    name: name,
-    price: amount ? amount + " so'm" : "0 so'm",
-    money: amount || "0",
-    category: category,
-    date: date || "Kiritilmagan",
-    type: type
+    // Daromad bosilganda price avtomatik "Daromad" bo'ladi, aks holda kiritilgan summa so'mda yoziladi
+    const formattedPrice = type === "Daromad" ? "Daromad" : (amount ? amount + " so'm" : "0 so'm");
+
+    const newTransaction = {
+      id: Date.now(),
+      name: name,
+      price: formattedPrice,
+      money: amount || "0",
+      category: category,
+      date: date || "Kiritilmagan",
+      type: type,
+      // Kelajakda rasmini ajratish uchun belgi qo'shib ketamiz
+      img: type === "Daromad" ? "get31" : "get8" 
+    };
+
+    setProducts([newTransaction, ...products]);
+
+    if (editsTask) {
+      dispatch(updateTask(name));
+    } else {
+      dispatch(createTask(name));
+    }
+
+    setName("");
+    setAmount("");
+    setCategory("");
+    setDate("");
+    setShow(false);
   };
-
-  setProducts([newTransaction, ...products]);
-
-  if (editsTask) {
-    dispatch(updateTask(name));
-  } else {
-    dispatch(createTask(name));
-  }
-
-  setName("");
-  setAmount("");
-  setCategory("");
-  setDate("");
-  setShow(false);
-};
 
   return (
     <div className='tracker3'>
@@ -113,46 +135,30 @@ const Tracker3 = () => {
         </div>
         <nav>
           <ul className="header-ul">
-            <Link to={`/user1/:id`}>
-              <li>
-                <img src={get2} alt="" />
-                <p>Dashboard</p>
-              </li>
+            <Link to={`/user1/:id`} style={{ textDecoration: 'none' }}>
+              <li><img src={get2} alt="" /><p>Dashboard</p></li>
             </Link>
-            <Link to={`/user2/:id`}>
-              <li>
-                <img src={get3} alt="" />
-                <p>Transactions</p>
-              </li>
+            <Link to={`/user2/:id`} style={{ textDecoration: 'none' }}>
+              <li><img src={get3} alt="" /><p>Transactions</p></li>
             </Link>
-            <Link to={`/user3/:id`}>
-              <li>
-                <img src={get4} alt="" />
-                <p>Kategoriyalar</p>
-              </li>
+            <Link to={`/user3/:id`} style={{ textDecoration: 'none' }}>
+              <li><img src={get4} alt="" /><p>Kategoriyalar</p></li>
             </Link>
-            <Link to={`/user4/:id`}>
-              <li>
-                <img src={get5} alt="" />
-                <p>Statistika</p>
-              </li>
+            <Link to={`/user4/:id`} style={{ textDecoration: 'none' }}>
+              <li><img src={get5} alt="" /><p>Statistika</p></li>
             </Link>
-            <Link to={`/user5/:id`}>
-              <li>
-                <img src={get6} alt="" />
-                <p>Profil</p>
-              </li>
+            <Link to={`/user5/:id`} style={{ textDecoration: 'none' }}>
+              <li><img src={get6} alt="" /><p>Profil</p></li>
             </Link>
           </ul>
         </nav>
       </header>
+
       <div className="tracker3-div">
         <div className="tracker3-div1">
-          <div>
-            <h2>Tranzaksiyalar</h2>
-            <p>Barcha xarajat va daromadlar</p>
-          </div>
+          <div><h2>Tranzaksiyalar</h2><p>Barcha xarajat va daromadlar</p> </div>
           <button onClick={() => setShow(true)} className="tracker3-div1-btn">+ Yangi tranzaksiya</button>
+          
           {show && (
             <form className="modal" onSubmit={handleSubmit}>
               <div className="modal-content">
@@ -160,14 +166,10 @@ const Tracker3 = () => {
                   <h2>Yangi tranzaksiyalar</h2>
                   <img onClick={() => setShow(false)} src={get18} alt="" style={{cursor: 'pointer'}} />
                 </div>
-                <h3>Nomi</h3>
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Masalan: Supermarket" />
-                <h3>Summa (so'm)</h3>
-                <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="0" />
-                <h3>Kategoriya</h3>
-                <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Masalan: Ovqat" />
-                <h3>Sana</h3>
-                <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+                <h3>Nomi</h3><input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Masalan: Supermarket" />
+                <h3>Summa (so'm)</h3><input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="0" />
+                <h3>Kategoriya</h3><input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Masalan: Ovqat" />
+                <h3>Sana</h3> <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
                 <h3>Turi</h3>
                 <div>
                   <button type="button" onClick={() => setType("Xarajat")} style={{borderColor: type === "Xarajat" ? "red" : "#ccc"}}><img src={get10} />Xarajat</button>
@@ -181,13 +183,16 @@ const Tracker3 = () => {
             </form>
           )}
         </div>
+
         <div className="tracker3-div2">
           <div className="tracker3-div3">
             <input value={search} type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Qidirish..." />
-            <button>Barchasi</button>
-            <h3>Daromad</h3>
-            <h3>_Xarajat</h3>
+            {/* Filtr tugmalari funksiyalari bog'landi */}
+            <button onClick={() => setFilterType("all")} style={{ fontWeight: filterType === "all" ? "bold" : "normal" }}>Barchasi</button>
+            <h3 onClick={() => setFilterType("daromad")} style={{ cursor: 'pointer', fontWeight: filterType === "daromad" ? "bold" : "normal" }}>Daromad</h3>
+            <h3 onClick={() => setFilterType("xarajat")} style={{ cursor: 'pointer', fontWeight: filterType === "xarajat" ? "bold" : "normal" }}>_Xarajat</h3>
           </div>
+
           {filteredProducts.length === 0 ? (
             <p className="text-3xl text-red-600 betania">Mahsulot topilmadi...</p>
           ) : (
@@ -195,7 +200,8 @@ const Tracker3 = () => {
               {filteredProducts.slice(0, 15).map((product, index) => (
                 <div className="tracker3-div4" key={product.id || index}>
                   <div className="tracker3-div5">
-                    <img className="tracker3-div5-1" src={get8} alt="" />
+                    {/* Agar yangi yaratilgan element turi Daromad bo'lsa get31, aks holda get8 chiqadi */}
+                    <img className="tracker3-div5-1" src={product.img === "get31" ? get31 : get8} alt="" />
                     <div>
                       <h3>{product.name || "Brendsiz"}</h3>
                       <p>{product.price}</p>

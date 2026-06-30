@@ -3,43 +3,50 @@
     {
       "id": "1",
       "name": "Supermarket",
-      "price": "Ovqat • 2026-05-15",
+      "price": "Ovqat",
+      "data": "• 2026-05-15",
       "money": "-45,000 so'm"
     },
     {
       "id": "2",
       "name": "Ish haqi",
-      "price": "Daromad • 2026-05-14",
+      "price": "Daromad",
+      "data": "• 2026-05-14",
       "money": "+ 5,000,000 so'm"
     },
     {
       "id": "3",
       "name": "Transport",
-      "price": "Transport • 2026-05-14",
+      "price": "Transport",
+      "data": "• 2026-05-14",
       "money": "-25,000 so'm"
     },
     {
       "id": "4",
       "name": "Kafe",
-      "price": "Ovqat • 2026-05-13",
+      "price": "Ovqat",
+      "data": "• 2026-05-13",
       "money": "-60,000 so'm"
     },
     {
       "id": "5",
       "name": "Kommunal",
-      "price": "To'lovlar • 2026-05-12",
+      "price": "To'lovlar",
+      "data": "• 2026-05-12",
       "money": "-350,000 so'm"
     },
     {
       "id": "6",
       "name": "Benzin",
-      "price": "Transport • 2026-05-11",
+      "price": "Transport",
+      "data": "• 2026-05-11",
       "money": "-120,000 so'm"
     },
     {
       "id": "7",
       "name": "Restorant",
-      "price": "Ovqat • 2026-05-10",
+      "price": "Ovqat",
+      "data": "• 2026-05-10",
       "money": "-180,000 so'm"
     }
   ],
@@ -48,7 +55,7 @@
       "id": "1",
       "name": "Ovqat",
       "static": "25.2%",
-      "image": "/imagea/Container1.png",
+      "image": "/image/Container1.png",
       "price": "24 tranzaksiya",
       "money": "850,000 so'm",
       "images": "/images/Container9.png"
@@ -57,7 +64,7 @@
       "id": "2",
       "name": "Transport",
       "static": "12.5%",
-      "image": "/imagea/Container2.png",
+      "image": "/image/Container2.png",
       "price": "15 tranzaksiya",
       "money": "420,000 so'm",
       "images": "/images/Container9.png"
@@ -66,7 +73,7 @@
       "id": "3",
       "name": "To'lovlar",
       "static": "19.3%",
-      "image": "/imagea/Container3.png",
+      "image": "/image/Container3.png",
       "price": "8 tranzaksiya",
       "money": "650,000 so'm",
       "images": "/images/Container9.png"
@@ -75,7 +82,7 @@
       "id": "4",
       "name": "O'yin-kulgi",
       "static": "9.5%",
-      "image": "/imagea/Container4.png",
+      "image": "/image/Container4.png",
       "price": "12 tranzaksiya",
       "money": "320,000 so'm",
       "images": "/images/Container9.png"
@@ -84,7 +91,7 @@
       "id": "5",
       "name": "Kafe",
       "static": "8.3%",
-      "image": "/imagea/Container5.png",
+      "image": "/image/Container5.png",
       "price": "18 tranzaksiya",
       "money": "280,000 so'm",
       "images": "/images/Container9.png"
@@ -93,7 +100,7 @@
       "id": "6",
       "name": "Salomatlik",
       "static": "13.4%",
-      "image": "/imagea/Container6.png",
+      "image": "/image/Container6.png",
       "price": "6 tranzaksiya",
       "money": "450,000 so'm",
       "images": "/images/Container9.png"
@@ -102,7 +109,7 @@
       "id": "7",
       "name": "Ish",
       "static": "5.3%",
-      "image": "/imagea/Container7.png",
+      "image": "/image/Container7.png",
       "price": "9 tranzaksiya",
       "money": "180,000 so'm",
       "images": "/images/Container9.png"
@@ -111,7 +118,7 @@
       "id": "8",
       "name": "Sovg'alar",
       "static": "25.2%",
-      "image": "/imagea/Container8.png",
+      "image": "/image/Container8.png",
       "price": "7 tranzaksiya",
       "money": "220,000 so'm",
       "images": "/images/Container9.png"

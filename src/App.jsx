@@ -5,6 +5,7 @@ import Tracker3 from "./components/tracker3/Tracker3";
 import Tracker4 from "./components/tracker4/Tracker4";
 import Tracker5 from "./components/tracker5/Tracker5";
 import Tracker6 from "./components/tracker6/Tracker6";
+import Tracker7 from "./components/tracker7/Tracker7";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/user3/:id" element={<Tracker4 />} />
         <Route path="/user4/:id" element={<Tracker5 />} />
         <Route path="/user5/:id" element={<Tracker6 />} />
+        <Route path="/user6/:id" element={<Tracker7 />} />
       </Routes>
     </div>
   )

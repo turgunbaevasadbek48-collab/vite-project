@@ -51,12 +51,8 @@
   gap: 10px;
   list-style: none;
   border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.header-ul li:hover {
-  background-color: black;
-}
-
 .header-ul img {
   width: 20px;
   height: 20px;
@@ -67,10 +63,30 @@
   color: #717182;
   margin-left: 10px;
   text-decoration: none;
+  background-color: transparent;
+  transition: color 0.3s ease 0.9s;
+}
+
+.header-ul li:hover {
+  animation: ikkiBosqichliRang 1.3s forwards;
 }
 
 .header-ul p:hover {
   color: white;
+}
+
+@keyframes ikkiBosqichliRang {
+  0% {
+    background-color: #F3F3F5;
+  }
+  
+  76% {
+    background-color: #F3F3F5;
+  }
+  
+  100% {
+    background-color: black;
+  }
 }
 
 .tracker6-div {

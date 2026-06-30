@@ -18,7 +18,7 @@ const Tracker1 = () => {
         <Link to={`/user1/:id`}>
           <button type="submit">Kirish</button>
         </Link>
-        <h4>Hisobingiz yo'qmi? <span>Ro'yxatdan o'tish</span></h4>
+        <h4>Hisobingiz yo'qmi? <Link to={`/user6/:id`} style={{ textDecoration: 'none' }}><span>Ro'yxatdan o'tish</span></Link></h4>
       </div>
     </div>
   )
