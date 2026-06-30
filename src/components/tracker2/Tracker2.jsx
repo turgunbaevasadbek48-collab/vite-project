@@ -152,28 +152,36 @@ const Tracker2 = () => {
                 <p>Ovqat</p>
                 <p>850,000 so'm</p>
               </div>
-              <img src={get9} alt="" />
+              <div className="tracker2-div11">
+                <div className="tracker2-div12"></div>
+              </div>
             </div>
             <div className="tracker2-div10">
               <div className="tracker2-div9">
                 <p>Transport</p>
                 <p>420,000 so'm</p>
               </div>
-              <img src={get14} alt="" />
+              <div className="tracker2-div11">
+                <div className="tracker2-div13"></div>
+              </div>
             </div>
             <div className="tracker2-div10">
               <div className="tracker2-div9">
                 <p>To'lovlar</p>
                 <p>650,000 so'm</p>
               </div>
-              <img src={get9} alt="" />
+              <div className="tracker2-div11">
+                <div className="tracker2-div14"></div>
+              </div>
             </div>
             <div className="tracker2-div10">
               <div className="tracker2-div9">
                 <p>O'yin-kulgi</p>
                 <p>320,000 so'm</p>
               </div>
-              <img src={get15} alt="" />
+              <div className="tracker2-div11">
+                <div className="tracker2-div15"></div>
+              </div>
             </div>
           </div>
         </div>

@@ -55,6 +55,7 @@
       "id": "1",
       "name": "Ovqat",
       "static": "25.2%",
+      "image": "https://blog.openreplay.com/images/building-a-shopping-cart-in-react-with-redux-tools/images/hero.png",
       "price": "24 tranzaksiya",
       "money": "850,000 so'm"
     },
@@ -62,6 +63,7 @@
       "id": "2",
       "name": "Transport",
       "static": "12.5%",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGnYMPniQ4PbcnTTnbh-Q4fZOuKGQ5fvPJg&s",
       "price": "15 tranzaksiya",
       "money": "420,000 so'm"
     },
@@ -69,6 +71,7 @@
       "id": "3",
       "name": "To'lovlar",
       "static": "19.3%",
+      "image": "c",
       "price": "8 tranzaksiya",
       "money": "650,000 so'm"
     },
@@ -76,6 +79,7 @@
       "id": "4",
       "name": "O'yin-kulgi",
       "static": "9.5%",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7plmLY7D7CNgtZ_6TfdzQyIXvn0NSqH-PZg&s",
       "price": "12 tranzaksiya",
       "money": "320,000 so'm"
     },
@@ -83,6 +87,7 @@
       "id": "5",
       "name": "Kafe",
       "static": "8.3%",
+      "image": "https://icon2.cleanpng.com/20180616/iei/kisspng-carbon-12-computer-icons-office-supplies-5b254bf0647566.3714818215291709284115.jpg",
       "price": "18 tranzaksiya",
       "money": "280,000 so'm"
     },
@@ -90,6 +95,7 @@
       "id": "6",
       "name": "Salomatlik",
       "static": "13.4%",
+      "image": "https://cdn-icons-png.flaticon.com/256/189/189671.png",
       "price": "6 tranzaksiya",
       "money": "450,000 so'm"
     },
@@ -97,6 +103,7 @@
       "id": "7",
       "name": "Ish",
       "static": "5.3%",
+      "image": "https://thumbs.dreamstime.com/b/blue-briefcase-icon-simple-blue-briefcase-icon-white-background-460882000.jpg",
       "price": "9 tranzaksiya",
       "money": "180,000 so'm"
     },
@@ -104,6 +111,7 @@
       "id": "8",
       "name": "Sovg'alar",
       "static": "25.2%",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeckuv3XpTu7dobxPNkKDEXW1nqpOTRLcEYw&s",
       "price": "7 tranzaksiya",
       "money": "220,000 so'm"
     }

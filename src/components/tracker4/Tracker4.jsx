@@ -130,82 +130,95 @@ const Tracker4 = () => {
             <div className="tracker4-div3" key={item.id || index}>
               <div>
                 <img className="tracker4-div3-1" 
-                  src={Container5} alt="" />
+                  src={item.image} alt="" />
                 <h2>{item.static}</h2>
               </div>
               <h3>{item.name}</h3>
               <p>{item.price}</p>
               <h3>{item.money}</h3>
-              <img className="tracker4-div3-2" 
-                src={Container9} alt="" />
+              <div className="tracker4-div3-2">
+                <div className="tracker4-div3-3"></div>
+              </div>
             </div>
           ))}
         </div>
         <div className="tracker4-div4">
           <h2>Umumiy xarajatlar</h2>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container1} alt="" />
+            <img className="tracker4-div5-1" src="https://blog.openreplay.com/images/building-a-shopping-cart-in-react-with-redux-tools/images/hero.png" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Ovqat</p>
                 <p>850,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get9} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-2"></div>
+              </div>
             </div>
             <p>25.2%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container2} alt="" />
+            <img className="tracker4-div5-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGnYMPniQ4PbcnTTnbh-Q4fZOuKGQ5fvPJg&s" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Transport</p>
                 <p>420,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get15} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-3"></div>
+              </div>
             </div>
             <p>12.5%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container3} alt="" />
+            <img className="tracker4-div5-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLWJy8y_aaDieIvQ6OtCF-pZj1ETk_43xr-g&s" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>To'lovlar</p>
                 <p>650,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get14} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-4"></div>
+              </div>
             </div>
             <p>19.3%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container4} alt="" />
+            <img className="tracker4-div5-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7plmLY7D7CNgtZ_6TfdzQyIXvn0NSqH-PZg&s" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>O'yin-kulgi</p>
                 <p>320,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get9} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-5"></div>
+              </div>
             </div>
             <p>9.5%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container5} alt="" />
+            <img className="tracker4-div5-1" src="https://icon2.cleanpng.com/20180616/iei/kisspng-carbon-12-computer-icons-office-supplies-5b254bf0647566.3714818215291709284115.jpg" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Kafe</p>
                 <p>280,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get15} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-6"></div>
+              </div>
             </div>
             <p>8.3%</p>
           </div>
           <div className="tracker4-div5">
-            <img className="tracker4-div5-1" src={Container3} alt="" />
+            <img className="tracker4-div5-1" src="https://cdn-icons-png.flaticon.com/256/189/189671.png" alt="" />
             <div className="tracker4-div6">
               <div>
                 <p>Salomatlik</p>
                 <p>450,000 so'm</p>
               </div>
-              <img className="tracker4-div5-2" src={get14} alt="" />
+              <div className="tracker4-div6-1">
+                <div className="tracker4-div6-7"></div>
+              </div>
             </div>
             <p>13.4%</p>
           </div>
