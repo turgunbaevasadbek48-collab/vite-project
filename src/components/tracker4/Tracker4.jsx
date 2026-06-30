@@ -26,9 +26,7 @@ const Tracker4 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!kategoriya.trim() || !summa.trim()) return;
-
     const newCategoryItem = {
       id: Date.now(),
       image: "/images/supermarket.png",
@@ -38,9 +36,7 @@ const Tracker4 = () => {
       money: sana || "Tranzaksiya",
       images: get13
     };
-
     setCategoriesList([newCategoryItem, ...categoriesList]);
-
     setStatistika("");
     setKategoriya("");
     setSana("");

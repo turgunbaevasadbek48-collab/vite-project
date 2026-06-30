@@ -286,6 +286,10 @@
   border: 1px solid #0000001A;
 }
 
+.tracker6-btn:hover {
+  background-color: #F3F3F5;
+}
+
 .tracker6-div10 {
   width: 350px;
   height: 420px;
@@ -364,6 +368,28 @@
   border-radius: 10px;
   margin-bottom: 12px;
   border: 1px solid #0000001A;
+}
+
+.tracker6-div14:hover {
+  background-color: #F3F3F5;
+}
+
+.tracker6-div17 {
+  display: flex;
+  width: 302px;
+  height: 40px;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #0000001A;
+}
+
+.tracker6-div17:hover {
+  color: white;
+  border: none;
+  background-color: red;
 }
 
 .tracker6-div15 {

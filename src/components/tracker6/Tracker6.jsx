@@ -115,7 +115,7 @@ const Tracker6 = () => {
                 </div>
                 <input type="text" placeholder="Eski parol" />
                 <input type="text" placeholder="Yangi parol" />
-                <button>Parolni yangilash</button>
+                <button className="tracker6-btn">Parolni yangilash</button>
               </div>
               <div className="tracker6-div8-1">
                 <div className="tracker6-div9">
@@ -125,7 +125,7 @@ const Tracker6 = () => {
                     <p>Qo'shimcha xavfsizlik qatlami</p>
                   </div>
                 </div>
-                <button>Yoqish</button>
+                <button className="tracker6-btn">Yoqish</button>
               </div>
             </div>
           </div>
@@ -175,7 +175,7 @@ const Tracker6 = () => {
                 <img src={get28} alt="" />
                 <h3>Maxfiylik sozlamalari</h3>
               </div>
-              <div className="tracker6-div14">
+              <div className="tracker6-div17">
                 <img src={get29} alt="" />
                 <h3>Hisobdan chiqish</h3>
               </div>
